@@ -8,8 +8,6 @@
     "scripts": [
         "scripts/hooks/init.js"
     ],
-    "styles": [],
-    "packs": [],
     "dependencies": [{
             "name": "libwrapper",
             "type": "module"
