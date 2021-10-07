@@ -1,3 +1,3 @@
-Hooks.once('setup'function() {
+Hooks.once('setup', function() {
 
 });
