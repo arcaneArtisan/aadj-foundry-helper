@@ -1,8 +1,8 @@
 {
-    "name": "moreSpecialDurations",
-    "title": "More Special Durations",
+    "name": "aadj-foundry-helper",
+    "title": "arcaneArtisan's Foundry Helper Module",
     "description": "An extension for DAE adding more special durations.",
-    "author": "Danni",
+    "author": "Danni Jo",
     "version": "0.0.5",
     "minimumCoreVersion": "0.8.9",
     "scripts": [
