@@ -1,0 +1,28 @@
+{
+    "name": "moreSpecialDurations",
+    "title": "More Special Durations",
+    "description": "An extension for DAE adding more special durations.",
+    "author": "Danni",
+    "version": "0.0.5",
+    "minimumCoreVersion": "0.8.9",
+    "scripts": [
+        "scripts/hooks/init.js"
+    ],
+    "styles": [],
+    "packs": [],
+    "dependencies": [{
+            "name": "libwrapper",
+            "type": "module"
+        },
+        {
+            "name": "dae",
+            "version": "0.5.6",
+            "manifest": "https://gitlab.com/tposney/dae/raw/master/package/module.json"
+        },
+        {
+            "name": "about-time",
+            "manifest": ""
+        }
+    ],
+    "system": ["dnd5e"]
+}
