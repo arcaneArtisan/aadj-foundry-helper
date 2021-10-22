@@ -1,0 +1,64 @@
+<section class="nav">
+
+</section>
+<section class="">
+    <form class="{{cssClass}} flexcol" autocomplete="off">
+        <header class="sheet-header">
+            <img src="{{data.img}}" data-edit="img" title="{{data.name}}" height="64" width="64"/>
+            <h1><input name="name" type="text" value="{{data.name}}" placeholder="Name" disabled/></h1>
+            <style>
+                #scope { display: none; }
+                #type { display: none; }
+                .furnace-macro-run-as-gm { display: none; }
+            </style>
+        </header>
+
+        <input type='hidden' name='currentKey' value={{defaultCommand}} />
+
+        <div id='scope' class="form-group">
+            <label>Scope</label>
+            <select name="scope" disabled>
+                {{#select data.scope}}
+                {{#each macroScopes}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+        </div>
+
+        <div id='type' class="form-group">
+            <label>Type</label>
+            <select name="type" disabled>
+                {{#select data.type}}
+                {{#each macroTypes}}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+        </div>
+
+        <div id='event' class="form-group">
+            <!--<label>Item Event</label>
+            <select name="macroTrigger">
+                {{#each macroCommandGroups as |group groupKey|}}
+                    <optgroup label="{{group.label}}">
+                        {{#select ../defaultCommand}}
+                        {{#each group.items as |command commandKey|}}
+                            <option value="{{command.key}}">{{command.label}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </optgroup>
+                {{/each}}
+            </select>-->
+        </div>
+
+        <div class="form-group stacked command">
+            <label>Command</label>
+            <textarea name="command">{{command}} </textarea>
+        </div>
+
+        <footer class="sheet-footer flexrow">
+            <button id='savemacrocmd' type="submit"><i class="fas fa-save"></i> {{ localize "aadj.buttons.saveMacro" }}</button>
+        </footer>
+</form>
+</section>

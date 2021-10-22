@@ -1,0 +1,51 @@
+<div class="aadj-macro-editor {{#if collapsed}}collapse{{/if}}">
+    <div class='body flexrow'>
+        <div class='directory-sidebar flexcol'>
+            <header class='sidebarHeader'>
+                <div class="tab-button sidebar-toggle"><i class="fas {{#if collapsed}}fa-caret-right{{else}}fa-caret-left{{/if}}"></i></div>
+                <div class="close"><i class="fas fa-times"></i></div>
+            </header>
+            {{#each macroTriggerGroups as |group groupKey|}}
+                <h3>{{group.label}}</h3>
+                <ol class='category flexcol'>
+                    {{#each group.items as |item itemKey|}}
+                        <li class='macroItem entity' title='{{item.description}}' data-entity-id='{{item.key}}'>
+                            <h4 class='entity-name flexrow'><img src='{{item.icon}}' alt='{{item.name}} Icon' title='{{item.description}}' /><a>{{item.name}}</a></h4>
+                        </li>
+                    {{/each}}
+                </ol>
+            {{/each}}
+        </div>
+        <div class='mainbar flexcol'>
+            <header class="sheet-header">
+                <img src="{{macro.icon}}" data-edit="img" title="{{macro.label}}" height="64" width="64"/>
+                <h1><input name="name" type="text" value="{{macro.label}}" placeholder="Name" disabled/></h1>
+            </header>
+            <div class='navigation flexrow'>
+                <div class='nav-button history back-button{{#unless canBack}} disabled{{/unless}}' title="{{localize 'aadj.macro-editor.back'}}" data-history="back"><i class='fas fa-chevron-left'></i></div>
+                <div class='nav-button history forward-button{{#unless canBack}} disabled{{/unless}}' title="{{localize 'aadj.macro-editor.forward'}}" data-history="forward"><i class='fas fa-chevron-right'></i></div>
+                <div class='button-group flexrow' id='journal-buttons'></div>
+            </div>
+            <div class='content flexcol editable'>
+                <section><form class="{{cssClass}} flexCol" autocomplete="off">
+                    <input type="hidden" name="currentMacroKey" value="{{openMacroKey}}" />
+                    <input type="hidden" name="scope" value="{{macro.scope}}" />
+                    <input type="hidden" name="type" value="{{macro.type}}" />
+
+                    <div class="form-group stacked command">
+                        <label>Command</label>
+                        <textarea name="command">{{macro.command}}</textarea>
+                    </div>
+                    <footer class="sheet-footer flexrow">
+                        <button id='savemacrocmd' type="submit"><i class="fas fa-save"></i> {{ localize "aadj.buttons.saveMacro" }}</button>
+                    </footer>
+                </form></section>
+            </div>
+            <footer class='flexrow'>
+                <div class='navigate-prev'></div>
+                <div></div>
+                <div class='navigate-next'></div>
+            </footer>
+        </div>
+    </div>
+</div>

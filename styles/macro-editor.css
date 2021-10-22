@@ -1,0 +1,41 @@
+.aadj-macro-editor .directory-sidebar {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 100%;
+    background: url(../../../ui/parchment.jpg) repeat;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    transition: width 0.5s, flex 0.5s;
+}
+
+.aadj-macro-editor .collapse .directory-sidebar {
+    flex: 0 0 0px;
+    width: 0px;
+}
+.aadj-macro-editor .collapse .directory-sidebar > li {
+    height: 32px;
+    padding: 1em;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+.aadj-macro-editor .collapse .directory-sidebar > li > h4 {
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.aadj-macro-editor .collapse .directory-sidebar img {
+    height: 32px;
+    width: 32px;
+    margin-right: 2.5em;
+}
+
+.aadj-macro-editor .body {
+    height: 100%;
+}
+.aadj-macro-editor .content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.aadj-macro-editor > form {
+    padding: 0;
+}

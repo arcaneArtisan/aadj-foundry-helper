@@ -1,12 +1,12 @@
 {
-    "remotePath": "/home/znorton/.local/share/FoundryVTT/Data/modules/morespecialdurations/",
+    "remotePath": "/home/znorton/.local/share/FoundryVTT/Data/modules/aadj-foundry-helper/",
     "host": "epee.cc",
     "username": "znorton",
     "password": "76RhcfT1",
     "port": 22,
     "secure": false,
     "protocol": "sftp",
-    "uploadOnSave": false,
+    "uploadOnSave": true,
     "passive": false,
     "debug": false,
     "privateKeyPath": null,
@@ -20,7 +20,7 @@
     ],
     "generatedFiles": {
         "extensionsToInclude": [
-            ""
+            "*.js"
         ],
         "path": ""
     }

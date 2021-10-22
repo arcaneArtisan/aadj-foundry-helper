@@ -1,0 +1,74 @@
+.aadj-macro-editor .directory-sidebar {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 100%;
+    background: url(../../../ui/parchment.jpg) repeat;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    transition: width 0.5s, flex 0.5s;
+}
+
+.aadj-macro-editor .collapse .directory-sidebar {
+    flex: 0 0 0px;
+    width: 0px;
+}
+.aadj-macro-editor .directory-sidebar ol {
+    padding-right: 1.5em;
+
+}
+.aadj-macro-editor .directory-sidebar li {
+    height: 48px;
+    line-height: 48px;
+    padding: 8px;
+    overflow: hidden;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+.aadj-macro-editor .directory-sidebar li * {
+    border: 0 none;
+    padding: 0 0;
+    height: auto;
+}
+.aadj-macro-editor .directory-sidebar li > h4 {
+    line-height: 32px;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 32px;
+    width: 260px;
+    margin:  0;
+}
+.aadj-macro-editor .directory-sidebar li > h4 > a {
+    vertical-align: middle;
+    display: inline-block;
+    left: 78px;
+    width: 188px;
+    white-space: nowrap;
+    line-height:  32px;
+    overflow: hidden;
+    line-height: 1em;
+    margin: 0;
+}
+
+.aadj-macro-editor .directory-sidebar img {
+    height: 32px;
+    width: 32px;
+    margin-right: .5em;
+    float:  left;
+}
+
+.aadj-macro-editor .body {
+    height: 100%;
+}
+.aadj-macro-editor .content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.aadj-macro-editor > form {
+    padding: 0;
+}
+.aadj-macro-editor .mainbar {
+    padding-left: 1.5em;
+}
+.aadj-macro-editor .mainbar img {
+    border: 0 none;
+}

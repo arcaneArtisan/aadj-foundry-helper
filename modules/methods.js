@@ -1,0 +1,10 @@
+export { default as addContext } from "./methods/addContext.js";
+export { default as localizeStrings } from "./methods/localizeStrings.js";
+export { default as register } from "./methods/register.js";
+export { default as registerCoreHooks } from "./methods/registerCoreHooks.js";
+export { default as registerExtendedHooks } from "./methods/registerExtendedHooks.js";
+export { default as setupExtensions } from "./methods/setupExtensions.js";
+export { default as systemHandler } from "./methods/systemHandler.js";
+export { default as getItemMacros } from "./methods/getItemMacros.js";
+export { default as getMacroFolderByName } from "./methods/getMacroFolderByName.js";
+export { default as setItemTriggerMacro } from "./methods/setItemTriggerMacro.js";

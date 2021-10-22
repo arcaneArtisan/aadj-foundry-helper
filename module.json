@@ -2,25 +2,29 @@
     "name": "aadj-foundry-helper",
     "title": "arcaneArtisan's Foundry Helper Module",
     "description": "An extension for DAE adding more special durations.",
-    "author": "Danni Jo",
-    "version": "0.0.5",
-    "minimumCoreVersion": "0.8.9",
-    "scripts": [
-        "scripts/hooks/init.js"
-    ],
-    "dependencies": [{
-            "name": "libwrapper",
-            "type": "module"
-        },
+    "authors": [{
+        "name": "Danni Jo"
+    }],
+    "languages": [
         {
-            "name": "dae",
-            "version": "0.5.6",
-            "manifest": "https://gitlab.com/tposney/dae/raw/master/package/module.json"
-        },
-        {
-            "name": "about-time",
-            "manifest": ""
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+
         }
     ],
-    "system": ["dnd5e"]
+    "dependencies": [
+        {
+            "name": "lib-wrapper"
+        }
+    ],
+    "version": "0.0.5",
+    "minimumCoreVersion": "0.8.9",
+    "compatibleCoreVersion": "0.8.9",
+    "esmodules": [
+        "modules/aadj-foundry-helper.js"
+    ],
+    "styles": [
+        "styles/aadj-macro-editor.css"
+    ]
 }
